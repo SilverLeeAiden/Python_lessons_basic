@@ -15,11 +15,11 @@ a = int(input())
 n = a%10
 a = a//10
 while a > 0:
-if a%10 > n:
-n = a%10
-a = a//10
-print("Наибольшая цифра:")
-print(n)
+ if a%10 > n:
+  n = a%10
+  a = a//10
+  print("Наибольшая цифра:")
+  print(n)
 
 
 
@@ -32,10 +32,8 @@ print(n)
 
 a = int(input())
 b = int(input())
-a = a + b
-b = a - b
-a = a - b
-print(a,b)
+a, b = b, a
+Print(a, b)
 
 
 # Задача-3: Напишите программу, вычисляющую корни квадратного уравнения вида
