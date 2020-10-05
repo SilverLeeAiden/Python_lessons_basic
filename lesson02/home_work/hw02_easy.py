@@ -23,14 +23,14 @@ for item in list:
 # Задача-2:
 # Даны два произвольные списка.
 # Удалите из первого списка элементы, присутствующие во втором списке.
-lst1 = [9, 8, 8, 4, 5, 1, 3]
-lst2 = [1, 8, 5]
+list1 = [9, 8, 8, 4, 5, 1, 3]
+list2 = [1, 8, 5]
 res = []
-for i in lst1:
-    if i not in lst2:
+for i in list1:
+    if i not in list2:
         res.append(i)
-lst1 = res
-print(lst1)
+list1 = res
+print(list1)
 print()
 
 
