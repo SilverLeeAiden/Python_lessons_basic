@@ -24,6 +24,19 @@ date = '01.22.1001'
 date = '1.12.1001'
 date = '-2.10.3001'
 
+date = input('Введите дату:')
+days_in_month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+day, month, year = date.split('.')
+if len(day) == 2 and len(month) == 2 and len(year) == 4:
+    if 0 < int(month) <= 12 \
+        and 0 < int(year) <= 9999 \
+        and 0 < int(day) <= days_in_month[int(month)]:
+        print('Дата корректна')
+    else:
+        print('Дата некорректна')
+else:
+    print('Дата некорректна')
+
 
 # Задание-3: "Перевёрнутая башня" (Задача олимпиадного уровня)
 #
